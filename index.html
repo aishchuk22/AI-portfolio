@@ -4,29 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Only AI You Need</title>
+
+    <link rel="stylesheet" href="./index.css" />
   </head>
+
   <body>
     <header>
       <a href="./index.html"><p>AI</p></a>
       <nav>
         <ul>
           <li>
-            <a href="">
+            <a href="#about">
               <p>about</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#experience">
               <p>experience</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#main-projects">
               <p>projects</p>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#contact">
               <p>contact</p>
             </a>
           </li>
@@ -37,28 +40,27 @@
         <li><a href="">Contact me</a></li>
       </ul>
     </header>
+
     <main>
       <section class="hero">
         <h1>Lorem ipsum dolor sit.</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quam.
         </p>
-        <svg width="100" height="100" viewBox="0 0 100 100">
-          <circle
-            cx="50"
-            cy="50"
-            r="40"
-            stroke="black"
-            stroke-width="3"
-            fill="red"
-          />
-          <text x="50" y="55" font-size="20" text-anchor="middle" fill="white">
-            SVG
-          </text>
-        </svg>
+        <div class="svg-container">
+          <svg width="24" height="12">
+            <use href="./images/chevron-bottom.svg"></use>
+          </svg>
+          <svg width="24" height="12">
+            <use href="./images/chevron-bottom.svg"></use>
+          </svg>
+          <svg width="24" height="12">
+            <use href="./images/chevron-bottom.svg"></use>
+          </svg>
+        </div>
       </section>
 
-      <section class="about-me">
+      <section id="about" class="about-me">
         <h2>about me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab atque
@@ -66,10 +68,73 @@
           molestiae autem labore explicabo iste asperiores aliquid officia quod
           ullam voluptates.
         </p>
-        <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+        <img
+          src="./images/mePhotoMini.jpg"
+          alt="Andrii Ishchuk"
+          width="150"
+          height="150"
+        />
       </section>
 
-      <section class="main-projects">
+      <section id="experience" class="experience">
+        <h2>Experience</h2>
+        <div class="former-workplace-box">
+          <img
+            src="./images/healthjoyLogo.png"
+            alt="HealthJoy logo"
+            width="80"
+            height="80"
+          />
+          <h3>HealthJoy</h3>
+          <p>Position and years</p>
+          <ul>
+            <li>
+              <p>responsibilities</p>
+            </li>
+            <li>
+              <p>responsibilities</p>
+            </li>
+            <li>
+              <p>responsibilities</p>
+            </li>
+            <li>
+              <p>responsibilities</p>
+            </li>
+            <li>
+              <p>responsibilities</p>
+            </li>
+          </ul>
+        </div>
+        <div class="former-workplace-box">
+          <img
+            src="./images/pwcLogo.png"
+            alt="PwC logo"
+            width="80"
+            height="80"
+          />
+          <h3>PwC</h3>
+          <p>Position and years</p>
+          <ul>
+            <li>
+              <p>responsibilities</p>
+            </li>
+            <li>
+              <p>responsibilities</p>
+            </li>
+            <li>
+              <p>responsibilities</p>
+            </li>
+            <li>
+              <p>responsibilities</p>
+            </li>
+            <li>
+              <p>responsibilities</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="main-projects" class="main-projects">
         <h2>Projects</h2>
         <div class="projects-container">
           <div class="first-project">
@@ -272,7 +337,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="contact" class="contact">
         <h2>contact me</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
@@ -281,6 +346,7 @@
         <a href="">message me</a>
       </section>
     </main>
+
     <footer>
       <nav>
         <ul>
