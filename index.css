@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   --color-text: #1f1f1f;
-  background-color: #fffef9;
+  background-color: #ffffff;
 }
 
 ul {
@@ -33,6 +33,10 @@ a {
   color: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* end of general styles */
 
 .navbar-menu {
@@ -42,7 +46,9 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 25px;
+  align-items: center;
+  padding: 18px 25px;
+  border-bottom: 2px solid #e0e0e0;
 }
 
 .header-link {
@@ -69,7 +75,7 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 274px 43px;
+  padding: 280px 43px;
 }
 
 .hero-title {
@@ -90,6 +96,97 @@ a {
   transition: transform 0.3s ease-in-out;
 }
 
-.svg-container:hover {
+.svg-container:hover,
+.svg-container:focus {
   transform: scale(1.1);
+}
+
+.about {
+  color: var(--color-text);
+  padding: 60px 26px 80px;
+  background: #f2f2f2;
+}
+
+.about-title {
+  font-weight: 400;
+  font-size: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.about-text {
+  line-height: 133%;
+  margin-bottom: 30px;
+}
+
+.about-photo {
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+.experience {
+  color: var(--color-text);
+  padding: 60px 26px 80px;
+}
+
+.experience-title {
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.former-workplace-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.former-workplace-box:last-child {
+  margin-bottom: 0;
+}
+
+.workplace-desc {
+  display: flex;
+  gap: 8px;
+}
+
+.workplace-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.workplace-name {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.workplace-position {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+}
+
+.workplace-resp-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 133%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  letter-spacing: -0.02em;
+}
+
+.workplace-resp-item {
+}
+
+.workplace-resp-descripiton {
 }
