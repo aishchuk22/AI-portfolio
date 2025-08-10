@@ -4,50 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Only AI You Need</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
-    <header>
-      <a href="./index.html"><p>AI</p></a>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about">
-              <p>about</p>
-            </a>
+    <header class="header">
+      <a class="header-link" href="./index.html"><p>AI</p></a>
+      <div class="navbar-menu">
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#about-me"> about </a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#experience"> experience </a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#main-projects"> projects </a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="#contact"> contact </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-buttons-list">
+          <li class="header-buttons-item">
+            <a class="header-btn" href="">Resume</a>
           </li>
-          <li>
-            <a href="#experience">
-              <p>experience</p>
-            </a>
-          </li>
-          <li>
-            <a href="#main-projects">
-              <p>projects</p>
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <p>contact</p>
-            </a>
+          <li class="header-buttons-item">
+            <a class="header-btn" href="">Contact me</a>
           </li>
         </ul>
-      </nav>
-      <ul>
-        <li><a href="">Resume</a></li>
-        <li><a href="">Contact me</a></li>
-      </ul>
+      </div>
+      <svg class="mobile-burger-icon" width="35" height="25">
+        <use href="./images/burgerIcon.svg"></use>
+      </svg>
     </header>
 
     <main>
       <section class="hero">
-        <h1>Lorem ipsum dolor sit.</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quam.
-        </p>
-        <div class="svg-container">
+        <h1 class="hero-title">Hi, I'm Andrii</h1>
+        <p class="hero-text">I build and develop things</p>
+        <a href="#about-me" class="svg-container">
           <svg width="24" height="12">
             <use href="./images/chevron-bottom.svg"></use>
           </svg>
@@ -57,10 +68,10 @@
           <svg width="24" height="12">
             <use href="./images/chevron-bottom.svg"></use>
           </svg>
-        </div>
+        </a>
       </section>
 
-      <section id="about" class="about-me">
+      <section id="about-me" class="about-me">
         <h2>about me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab atque
@@ -343,7 +354,14 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
           quae eius obcaecati autem architecto in ad dignissimos at nisi enim.
         </p>
-        <a href="">message me</a>
+        <address>
+          <ul>
+            <li><a href="tel:+380931438380">(093) 143-83-80</a></li>
+            <li>
+              <a href="mailto:a_ishchuk22@ukr.net">a_ishchuk22@ukr.net</a>
+            </li>
+          </ul>
+        </address>
       </section>
     </main>
 

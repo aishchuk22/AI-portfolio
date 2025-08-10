@@ -1,0 +1,95 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  --color-text: #1f1f1f;
+  background-color: #fffef9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* end of general styles */
+
+.navbar-menu {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.header-link {
+  color: var(--color-text);
+  display: flex;
+}
+
+.header-link p {
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--color-text);
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.header-nav {
+  font-size: 16px;
+  line-height: 170%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 274px 43px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.hero-text {
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.svg-container {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.svg-container:hover {
+  transform: scale(1.1);
+}
