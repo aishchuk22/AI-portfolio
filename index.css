@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 ::after,
 ::before {
@@ -65,6 +69,16 @@ img {
   color: var(--color-text);
   display: flex;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+}
+
+.header-link:hover {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-link:active {
+  transform: translate(1px, 1px);
 }
 
 .header-link p {
@@ -84,6 +98,12 @@ img {
 .mobile-burger-icon {
   fill: transparent;
   stroke: var(--color-text);
+  transition: all 0.2s ease-in-out;
+}
+
+.mobile-burger-icon:hover {
+  fill: var(--color-text);
+  cursor: pointer;
 }
 
 .hero-container {
@@ -119,9 +139,32 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 
-.svg-container:hover,
-.svg-container:focus {
-  transform: scale(1.1);
+@keyframes blink {
+  0%,
+  40% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  40%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+
+.arrow-down-icon:nth-child(1) {
+  animation: blink 2s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.arrow-down-icon:nth-child(2) {
+  animation: blink 2s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.arrow-down-icon:nth-child(3) {
+  animation: blink 2s ease-in-out infinite;
+  animation-delay: 0.2s;
 }
 
 .about {
@@ -309,6 +352,9 @@ img {
 
 .project-screenshot {
   border-radius: 4px;
+  width: 100%;
+  height: 240px;
+  max-width: 450px;
 }
 
 .project-text-box {
@@ -374,6 +420,11 @@ img {
   align-items: center;
   fill: transparent;
   stroke: var(--color-text);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-icon:hover {
+  transform: scale(1.15);
 }
 
 .link-icon {
@@ -434,6 +485,15 @@ img {
 .other-projects-item {
   display: flex;
   gap: 12px;
+  padding: 12px;
+  border: 1px solid #d5d4d4;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.other-projects-item:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  translate: 0px -2px;
 }
 
 .project-item-img {
@@ -496,7 +556,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 26px 28px;
+  padding: 32px 26px 14px;
   margin: 0 auto;
   max-width: 550px;
 }
@@ -505,7 +565,7 @@ img {
   font-size: 30px;
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -524,7 +584,7 @@ img {
 .contact-text {
   font-size: 14px;
   line-height: 133%;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   text-align: center;
   max-width: 450px;
 }
@@ -542,6 +602,11 @@ img {
   justify-content: center;
   align-items: center;
   gap: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-list-item:hover a {
+  font-weight: 500;
 }
 
 .contact-list-item a {
@@ -571,4 +636,12 @@ img {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.footer-nav-item {
+  transition: transform 0.2s ease-in-out, rotate 0.2s ease-in-out;
+}
+
+.footer-nav-item:hover {
+  transform: scale(1.1) rotate(15deg);
 }
