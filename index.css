@@ -81,6 +81,11 @@ img {
   line-height: 170%;
 }
 
+.mobile-burger-icon {
+  fill: transparent;
+  stroke: var(--color-text);
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -101,6 +106,11 @@ img {
   font-weight: 300;
   font-size: 20px;
   margin-bottom: 50px;
+}
+
+.arrow-down-icon {
+  fill: transparent;
+  stroke: #111111;
 }
 
 .svg-container {
@@ -348,7 +358,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-top: 4px;
 }
 
 .project-links-list li,
@@ -363,11 +372,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: scale(1.08);
+  fill: transparent;
+  stroke: var(--color-text);
 }
 
 .link-icon {
-  transform: scaleX(1.12) scaleY(1.15);
+  margin-top: 1px;
+  fill: var(--color-text);
+  stroke: transparent;
 }
 
 .second-project {
