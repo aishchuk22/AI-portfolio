@@ -9,6 +9,10 @@
       href="./images/thunder-svgrepo-com.svg"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -64,16 +68,23 @@
     <main>
       <section class="hero">
         <div class="hero-container">
-          <h1 class="hero-title">Hi, I'm Andrii</h1>
-          <p class="hero-text">I build and develop things</p>
-          <a href="#about-me" class="svg-container">
-            <svg class="arrow-down-icon" width="24" height="20">
+          <h1 class="hero-title animate__animated animate__fadeInUp">
+            Hi, I'm <span>Andrii</span>
+          </h1>
+          <p class="hero-text animate__animated animate__fadeInUp">
+            I build and develop things
+          </p>
+          <a
+            href="#about-me"
+            class="svg-container animate__animated animate__fadeInUp"
+          >
+            <svg class="arrow-down-icon" width="28" height="24">
               <use href="./images/icons.svg#icon-chevron-bottom"></use>
             </svg>
-            <svg class="arrow-down-icon" width="24" height="20">
+            <svg class="arrow-down-icon" width="28" height="24">
               <use href="./images/icons.svg#icon-chevron-bottom"></use>
             </svg>
-            <svg class="arrow-down-icon" width="24" height="20">
+            <svg class="arrow-down-icon" width="28" height="24">
               <use href="./images/icons.svg#icon-chevron-bottom"></use>
             </svg>
           </a>
@@ -359,13 +370,15 @@
           <h2 class="other-projects-title">Other</h2>
           <ul class="other-projects-list">
             <li class="other-projects-item">
-              <img
-                src="./images/rentalCarLogo.png"
-                alt="logo"
-                class="project-item-img"
-              />
-              <div class="project-item-desc">
+              <div class="photo-name-wrapper">
+                <img
+                  src="./images/carIcon.png"
+                  alt="logo"
+                  class="project-item-img"
+                />
                 <h3 class="project-item-name">RentalCar</h3>
+              </div>
+              <div class="project-item-desc">
                 <p class="project-item-text">
                   A desktop app for browsing and filtering car rental listings
                   with full backend integration. It features pagination,
@@ -379,9 +392,7 @@
                     <p class="project-language-item-text">React</p>
                   </li>
                   <li class="project-language-item">
-                    <p class="project-language-item-text">
-                      Redux Toolkit/Router
-                    </p>
+                    <p class="project-language-item-text">Redux</p>
                   </li>
                   <li class="project-language-item">
                     <p class="project-language-item-text">REST API</p>
@@ -394,7 +405,7 @@
                         href="https://github.com/aishchuk22/Rental-Car-App"
                         target="_blank"
                         rel="noreferrer noopener"
-                        ><svg width="18" height="18" class="project-icon">
+                        ><svg width="21" height="21" class="project-icon">
                           <use href="./images/icons.svg#icon-ghIcon"></use>
                         </svg>
                       </a>
@@ -405,8 +416,8 @@
                         target="_blank"
                         rel="noreferrer noopener"
                         ><svg
-                          width="18"
-                          height="18"
+                          width="21"
+                          height="21"
                           class="project-icon link-icon"
                         >
                           <use href="./images/icons.svg#icon-linkIcon"></use>
@@ -418,13 +429,15 @@
               </div>
             </li>
             <li class="other-projects-item">
-              <img
-                src="./images/galleryImg.png"
-                alt="logo"
-                class="project-item-img"
-              />
-              <div class="project-item-desc">
+              <div class="photo-name-wrapper">
+                <img
+                  src="./images/gallery.png"
+                  alt="logo"
+                  class="project-item-img"
+                />
                 <h3 class="project-item-name">Images Gallery</h3>
+              </div>
+              <div class="project-item-desc">
                 <p class="project-item-text">
                   An app connected to pixabay-API for searching and displaying
                   images. It features infinite scroll, image modal, search and
@@ -451,7 +464,7 @@
                         href="https://github.com/aishchuk22/images-gallery"
                         target="_blank"
                         rel="noreferrer noopener"
-                        ><svg width="18" height="18" class="project-icon">
+                        ><svg width="21" height="21" class="project-icon">
                           <use href="./images/icons.svg#icon-ghIcon"></use>
                         </svg>
                       </a>
@@ -462,8 +475,8 @@
                         target="_blank"
                         rel="noreferrer noopener"
                         ><svg
-                          width="18"
-                          height="18"
+                          width="21"
+                          height="21"
                           class="project-icon link-icon"
                         >
                           <use href="./images/icons.svg#icon-linkIcon"></use>
@@ -475,13 +488,15 @@
               </div>
             </li>
             <li class="other-projects-item">
-              <img
-                src="./images/phonebookLogo.png"
-                alt="logo"
-                class="project-item-img"
-              />
-              <div class="project-item-desc">
+              <div class="photo-name-wrapper">
+                <img
+                  src="./images/phonebookLogo.png"
+                  alt="logo"
+                  class="project-item-img"
+                />
                 <h3 class="project-item-name">Phonebook App</h3>
+              </div>
+              <div class="project-item-desc">
                 <p class="project-item-text">
                   A phonebook app for storing and managing contacts. It features
                   user authentication, contact management, and filtering.
@@ -497,9 +512,7 @@
                     <p class="project-language-item-text">React</p>
                   </li>
                   <li class="project-language-item">
-                    <p class="project-language-item-text">
-                      Redux Toolkit/Router
-                    </p>
+                    <p class="project-language-item-text">Redux</p>
                   </li>
                 </ul>
                 <nav class="other-projects-navigation">
@@ -509,7 +522,7 @@
                         href="https://github.com/aishchuk22/phonebook-app"
                         target="_blank"
                         rel="noreferrer noopener"
-                        ><svg width="18" height="18" class="project-icon">
+                        ><svg width="21" height="21" class="project-icon">
                           <use href="./images/icons.svg#icon-ghIcon"></use>
                         </svg>
                       </a>
@@ -520,8 +533,8 @@
                         target="_blank"
                         rel="noreferrer noopener"
                         ><svg
-                          width="18"
-                          height="18"
+                          width="21"
+                          height="21"
                           class="project-icon link-icon"
                         >
                           <use href="./images/icons.svg#icon-linkIcon"></use>
@@ -538,12 +551,6 @@
 
       <section id="contact" class="contact">
         <div class="contact-container">
-          <h2 class="contact-title">contact me</h2>
-          <p class="contact-text">
-            I am currently searching for a career start in web-development, and
-            I would appreciate it if you could contact me with available job
-            opportunities.
-          </p>
           <address class="contact-address">
             <ul class="contact-list">
               <li class="contact-list-item">
@@ -577,7 +584,7 @@
                 href="https://github.com/aishchuk22"
                 target="_blank"
                 rel="noreferrer noopener"
-                ><svg width="40" height="40">
+                ><svg width="40" height="40" class="footer-icon-github">
                   <use href="./images/icons.svg#icon-icons8-github"></use>
                 </svg>
               </a>
@@ -587,7 +594,7 @@
                 href="https://www.linkedin.com/in/andrii-ishchuk/"
                 target="_blank"
                 rel="noreferrer noopener"
-                ><svg width="40" height="40">
+                ><svg width="40" height="40" class="footer-icon-linkedin">
                   <use href="./images/icons.svg#icon-icons8-linkedin"></use>
                 </svg>
               </a>
@@ -597,7 +604,7 @@
                 href="https://t.me/Andrii_Ishchuk22"
                 target="_blank"
                 rel="noreferrer noopener"
-                ><svg width="40" height="40">
+                ><svg width="40" height="40" class="footer-icon-telegram">
                   <use href="./images/icons.svg#icon-icons8-telegram-app"></use>
                 </svg>
               </a>

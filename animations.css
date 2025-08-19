@@ -1,0 +1,28 @@
+@keyframes blink {
+  0%,
+  40% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  40%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+
+@keyframes background-color-change {
+  0% {
+    background-color: #111111;
+    color: #eef1f2;
+  }
+  50% {
+    background-color: #eef1f2;
+    color: #111111;
+  }
+
+  100% {
+    background-color: #111111;
+    color: #eef1f2;
+  }
+}
