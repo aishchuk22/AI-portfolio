@@ -13,16 +13,16 @@
 
 @keyframes background-color-change {
   0% {
-    background-color: #111111;
+    background-color: #292929;
     color: #eef1f2;
   }
   50% {
     background-color: #eef1f2;
-    color: #111111;
+    color: #292929;
   }
 
   100% {
-    background-color: #111111;
+    background-color: #292929;
     color: #eef1f2;
   }
 }
